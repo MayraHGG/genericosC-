@@ -111,7 +111,15 @@ namespace U1_A2_Genericos
 
         public void AgregarIntegrante(T nuevoIntegrante)
         {
-            Integrantes.Add(nuevoIntegrante);
+            if(this.SePermiteCualquierSexo()){
+                Integrantes.Add(nuevoIntegrante);
+                return;
+            }
+            else if(this.PerteneceAEsteEquipoPorSexo(nuevoIntegrante.Sexo)){
+                Integrantes.Add(nuevoIntegrante);
+                return;
+            }
+            throw new ArgumentException("el deportista no puede estar en este equipo");
         }
 
         public void Eliminar(T integrante)
@@ -125,16 +133,12 @@ namespace U1_A2_Genericos
         // bórralo junto con esto comentarios
         // con el tiempo usar región sólo molesta a la vista
         #region predicados
-        private boolean SoloSexoMasculino(sexo){
-            return sexo == Equipo.MASCULINO;
+        private boolean PerteneceAEsteEquipoPorSexo(sexo){
+            return this.Tipo == sexo;
         }
 
-        private boolean SoloSexoFemenino(sexo){
-            return sexo == Equipo.FEMENINO;
-        }
-
-        private boolean SePermiteCualquierSexo(sexo){
-            return sexo == Equipo.MIXTO;
+        private boolean SePermiteCualquierSexo(){
+            return this.Tipo == Equipo.MIXTO;
         }
         #endregion
 
