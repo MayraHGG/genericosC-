@@ -14,7 +14,17 @@ namespace U1_A2_Genericos
 
         public string Entrenador { get; set; }
         public byte NoIntegrantes { get; set; }
-        public string Tipo { get; set; }
+        public string Tipo {
+            get;
+            set{
+                string [] valoresPermitidos = [Deportista.MASCULINO, Deportista.FEMENINO, Deportista.MIXTO];
+                boolean tipoNoEsUnValorPermitido = !valoresPermitidos.Contains(value);
+                if(tipoNoEsUnValorPermitido){
+                    throw new ArgumentException(value + " no es un valor permitido para tipo");
+                }
+                return value;
+            }
+        }
 
         public List<T> Integrantes = new List<T>();
         public T[] Miembros { get; set; }
