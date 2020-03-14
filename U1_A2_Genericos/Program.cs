@@ -30,7 +30,7 @@ namespace U1_A2_Genericos
             equipo.AgregarIntegrante(new Futbolista("21", "Helena", "Castillo", "Ramirez", 25, "Femenino", 1.5, 55, "portero", 5, 0, 0));
 
             equipo.AgregarIntegrante(new Basketbolista("21", "Helena", "Castillo", "Ramirez", 25, "Femenino", 1.5, 55, 0, 0, 5));
-            equipo.AgregarIntegrante(new Beisbolistas("22", "JAvier", "Lopez", "Perez", 30, "MAsculino", 1.7, 60, 5, 2, 3, 6));
+            equipo.AgregarIntegrante(new Beisbolistas("22", "JAvier", "Lopez", "Perez", 30, "Masculino", 1.7, 60, 5, 2, 3, 6));
             equipo.AgregarIntegrante(new Voleibolista("23", "antonio", "ramirez", "Gonzalez", 28, "Masculino", 1.8, 65, 5, 0, 5));
 
             ///////////////////////////////////////////////////////

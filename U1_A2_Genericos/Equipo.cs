@@ -8,9 +8,9 @@ namespace U1_A2_Genericos
 {
     class Equipo<T> where T : Deportista
     {
-        public static string MASCULINO = "masculino";
-        public static string FEMENINO = "femenino";
-        public static string MIXTO = "mixto";
+        public static string MASCULINO = "Masculino";
+        public static string FEMENINO = "Femenino";
+        public static string MIXTO = "Mixto";
 
         public string Entrenador { get; set; }
         public byte NoIntegrantes { get; set; }
