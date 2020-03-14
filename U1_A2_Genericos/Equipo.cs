@@ -8,6 +8,10 @@ namespace U1_A2_Genericos
 {
     class Equipo<T> where T : Deportista
     {
+        public static string MASCULINO = "masculino";
+        public static string FEMENINO = "femenino";
+        public static string MIXTO = "mixto";
+
         public string Entrenador { get; set; }
         public byte NoIntegrantes { get; set; }
         public string Tipo { get; set; }
@@ -105,6 +109,24 @@ namespace U1_A2_Genericos
             Console.WriteLine("Datos eliminados");
             Integrantes.Remove(integrante);
         }
+
+
+        // puse esto de region para que veas donde añadí el código
+        // bórralo junto con esto comentarios
+        // con el tiempo usar región sólo molesta a la vista
+        #region predicados
+        private boolean SoloSexoMasculino(sexo){
+            return sexo == Equipo.MASCULINO;
+        }
+
+        private boolean SoloSexoFemenino(sexo){
+            return sexo == Equipo.FEMENINO;
+        }
+
+        private boolean SePermiteCualquierSexo(sexo){
+            return sexo == Equipo.MIXTO;
+        }
+        #endregion
 
 
     }
