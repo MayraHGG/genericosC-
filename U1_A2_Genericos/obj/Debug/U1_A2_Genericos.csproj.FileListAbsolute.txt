@@ -1,0 +1,6 @@
+e:\documents\visual studio 2015\Projects\U1_A2_Genericos\U1_A2_Genericos\bin\Debug\U1_A2_Genericos.exe.config
+e:\documents\visual studio 2015\Projects\U1_A2_Genericos\U1_A2_Genericos\bin\Debug\U1_A2_Genericos.exe
+e:\documents\visual studio 2015\Projects\U1_A2_Genericos\U1_A2_Genericos\bin\Debug\U1_A2_Genericos.pdb
+e:\documents\visual studio 2015\Projects\U1_A2_Genericos\U1_A2_Genericos\obj\Debug\U1_A2_Genericos.exe
+e:\documents\visual studio 2015\Projects\U1_A2_Genericos\U1_A2_Genericos\obj\Debug\U1_A2_Genericos.pdb
+e:\documents\visual studio 2015\Projects\U1_A2_Genericos\U1_A2_Genericos\obj\Debug\U1_A2_Genericos.csprojResolveAssemblyReference.cache
